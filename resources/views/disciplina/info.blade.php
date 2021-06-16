@@ -51,21 +51,6 @@
             </div>
             
         </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <br><b>Data de Criação:</b>
-                {{$disciplina->created_at}}
-            </div>
-
-            <div class="col-md-4">
-                <br><b>Data de Alteração:</b>
-                {{$disciplina->update_at}}
-            </div>
-
-        </div>
-
     </div>
 
     <div class="card-footer">

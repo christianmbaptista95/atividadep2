@@ -29,9 +29,6 @@
 		
 	</nav>
 
-
-
-
 	<div class="card">
 		<!--  Card -->
 		<div class="card-header">
@@ -84,5 +81,4 @@
 			</div>
 		</div>
 	</div>
-
 @endsection

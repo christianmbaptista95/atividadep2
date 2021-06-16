@@ -26,7 +26,7 @@ class AlunoController extends Controller
      */
     public function create()
     {
-        return view ('aluno.createAluno')->with('mensagem','Aluno cadastrado com sucesso!');
+        return view ('aluno.createAluno');
 
     }
 

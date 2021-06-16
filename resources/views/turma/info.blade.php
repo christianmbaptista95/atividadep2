@@ -51,26 +51,10 @@
             </div>
             
         </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <br><b>Data de Criação:</b>
-                {{$turma->created_at}}
-            </div>
-
-            <div class="col-md-4">
-                <br><b>Data de Alteração:</b>
-                {{$turma->update_at}}
-            </div>
-
-        </div>
-
     </div>
 
     <div class="card-footer">
         <a class="btn btn-sm btn-primary" href="{{route('turma.index')}}">Voltar</a>
     </div>
-
 </div>
 @endsection

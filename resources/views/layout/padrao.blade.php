@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@yield('titulo')</title>
 
-	
+
 	<script src="{{asset('js/app.js')}}"></script>
 	<link rel="stylesheet" href="{{asset('css/app.css')}}">
 
@@ -15,8 +15,31 @@
 
 <body>
 
-<div class="container">
-@yield('conteudo')
+
+	<div class="container">
+
+	<div class="card-header">
+
+        <h3>Sistema de Gerenciamento de Alunos</h3>
+
+    </div>
+
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"></button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="{{route('home')}}">Home</a>
+					<a class="nav-item nav-link" href="{{route('aluno.index')}}">Alunos</a>
+					<a class="nav-item nav-link" href="{{route('disciplina.index')}}">Disciplinas</a>
+					<a class="nav-item nav-link" href="{{route('turma.index')}}">Turmas</a>
+
+				</div>
+			</div>
+		</nav>
+		@yield('conteudo')
+	</div>
 
 
 
@@ -51,7 +74,7 @@
 
 				<!-- Rodape -->
 				<div class="modal-footer">
-					<button type="submit"  onclick="alert('Aluno cadastrado com sucesso!')" class="btn btn-primary btn-sm">Gravar</button>
+					<button type="submit" onclick="alert('Aluno cadastrado com sucesso!')" class="btn btn-primary btn-sm">Gravar</button>
 					<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar</button>
 				</div>
 				</form>
@@ -139,7 +162,6 @@
 		</div>
 	</div>
 	<!-- Fim - modal para cadastro de Turmas -->
-	</div>
 </body>
 
 </html>
